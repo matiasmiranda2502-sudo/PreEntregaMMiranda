@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Tu estilo personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- Encabezado -->
+  <header class="bg-dark py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <h1 class="mb-0 me-auto">Calendario</h1>
+
+        <nav class="w-100 mt-3">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="calendario.html">Calendario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout principal -->
+  <div class="container-fluid mt-4">
+    <div class="row gx-4">
+
+      <!-- Barra lateral -->
+      <aside class="col-md-2 destacados bg-dark text-white p-4 rounded">
+        <h2 class="text-center border-bottom pb-2 mb-4">Destacados</h2>
+
+        <div class="categoria mb-4">
+          <h3 class="text-info">🏆 Competiciones</h3>
+          <ul class="list-unstyled">
+            <li class="categoria-item">Liga Profesional</li>
+            <li class="categoria-item">Primera Nacional</li>
+            <li class="categoria-item">Libertadores</li>
+            <li class="categoria-item">Sudamericana</li>
+            <li class="categoria-item">Copa Argentina</li>
+            <li class="categoria-item">Champions</li>
+            <li class="categoria-item">Eliminatorias Conmebol</li>
+          </ul>
+        </div>
+
+        <div class="categoria">
+          <h3 class="text-info">🌍 Países</h3>
+          <ul class="list-unstyled">
+            <li class="categoria-item">Argentina</li>
+            <li class="categoria-item">Internacional</li>
+            <li class="categoria-item">Inglaterra</li>
+            <li class="categoria-item">España</li>
+            <li class="categoria-item">Italia</li>
+            <li class="categoria-item">Brasil</li>
+            <li class="categoria-item">Uruguay</li>
+          </ul>
+        </div>
+      </aside>
+
+
+      <!-- Contenido principal -->
+      <main class="col-md-10">
+        <!-- Sección donde se muestran los partidos del día -->
+        <section class="seccion mb-5">
+          <h1>Partidos de Hoy</h1>
+          <label for="selector-fecha" class="form-label">Seleccioná la fecha:</label>
+          <input type="date" id="selector-fecha" name="fecha2025" class="form-control w-50" />
+        </section>
+
+        <h2>Premier League</h2>
+        <hr />
+
+        <ul class="partidos list-group list-group-flush">
+          <li class="list-group-item bg-dark text-white">Equipo 1 vs Equipo 2 - Fecha</li>
+          <li class="list-group-item bg-dark text-white">Equipo A vs Equipo B - Fecha</li>
+          <li class="list-group-item bg-dark text-white">Equipo X vs Equipo Y - Fecha</li>
+        </ul>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-secondary text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 PreEntrega Miranda</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

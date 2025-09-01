@@ -1,0 +1,283 @@
+/* === Estilos base para todo el sitio === */
+body {
+  background-color: #1d1d1d; /* Fondo oscuro para todo el sitio */
+  color: white; /* Texto blanco por defecto */
+  font-family: Arial, sans-serif; /* Fuente principal */
+  margin: 0; /* Elimina el margen exterior por defecto */
+  padding: 0; /* Elimina el espacio interior por defecto */
+}
+
+/* Reemplazado por Bootstrap: bg-dark + text-white + py-3 + container + d-flex */
+
+/*nav ul {
+header {
+  padding: 1rem; /* Espaciado interno */
+  /*text-align: left; /* Alinea el contenido a la izquierda */
+/*}*/
+
+footer {
+  padding: 1rem;
+  text-align: center; /* Centra el texto del pie de página */
+}
+
+/* Reemplazado por Bootstrap: nav + nav-item + nav-link + justify-content-between */
+
+/*nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+ /* display: flex; /* Muestra los elementos en fila */
+ /* justify-content: center; /* Centra los elementos */
+ /* gap: 1rem; /* Espacio entre elementos */
+ /* margin: 0;
+  /*padding: 0;
+/*}*/
+
+/* Reemplazado por Bootstrap: text-info + fw-bold + nav-link */
+/*nav a {
+  color: inherit; /* Hereda el color del texto actual */
+  /*text-decoration: none; /* Elimina el subrayado */
+  /*font-weight: bold; /* Letras en negrita */
+/*}*/
+
+main {
+  flex-grow: 1; /* Ocupa el espacio restante dentro del layout */
+  padding: 1rem;
+  margin: 0 auto; /* Centra el contenido */
+}
+
+img {
+  max-width: 100%; /* Evita que excedan su contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black; /* Línea horizontal decorativa */
+  margin-bottom: 20px;
+}
+
+/* === Estilos para secciones y artículos === */
+.seccion {
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Sombra ligera */
+  margin-bottom: 2rem;
+}
+
+article {
+  background-color: #1d1d1d;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.seccion h2 {
+  font-size: 1.6em;
+  border-bottom: 2px solid #444; /* Línea decorativa bajo título */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center; /* Centra el texto del título */
+}
+
+/* === Formularios === */
+form {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 1rem; /* Espacio entre cada campo */
+}
+
+input, textarea, select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db; /* Color azul vibrante */
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* === Estructura del layout principal === */
+/*.layout {
+  display: flex; /* Divide el layout en dos columnas 
+  gap: 2rem;
+}*/
+
+/*.destacados {
+  width: 250px; /* Ancho fijo de la barra lateral 
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+}*/
+
+/*.destacados h2 {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}*/
+
+/*.contenido-principal {
+  flex: 1; /* Toma todo el espacio restante del layout 
+}*/
+
+/* === Categorías dentro del sidebar === */
+/*.categoria h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  color: #00bfff; /* Azul brillante 
+}*/
+
+/*.categoria ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.categoria li {
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  transition: background 0.3s, transform 0.2s; /* Efectos suaves al hacer hover 
+  cursor: pointer;
+}*/
+
+/*.categoria li:hover {
+  background-color: #00bfff;
+  color: #000;
+  transform: scale(1.05); /* Agranda ligeramente el elemento 
+}*/
+
+/* Conservado como .categoria-item:hover */
+
+.categoria-item {
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.categoria-item:hover {
+  background-color: #00bfff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
+/* === Sección de calendario === */
+.calendario-container {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.calendario-container label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.calendario-container input[type="date"] {
+  padding: 8px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaf6fc;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* === Lista de partidos destacados === */
+.partidos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.partidos li {
+  background-color: #444;
+  border: 2px solid #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+}
+
+.contenido h2 {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* === Corrección: Evita que textarea se pueda agrandar manualmente === */
+textarea {
+  resize: none;
+}
+
+/* === Formulario centrado y estilizado en la sección de contacto === */
+.contenido form {
+  max-width: 600px;
+  margin: 0 auto; /* Centra horizontalmente */
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.contenido label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contenido input,
+.contenido textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+/* === Estilos responsive para dispositivos móviles === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Muestra el menú en vertical */
+    align-items: center;
+  }
+
+  .layout {
+    flex-direction: column; /* Layout apilado en vertical */
+  }
+
+  .destacados,
+  .contenido-principal,
+  form,
+  .calendario-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1em;
+    width: 100%;
+  }
+}
