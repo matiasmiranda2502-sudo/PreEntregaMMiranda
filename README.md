@@ -55,22 +55,26 @@ Estructura de carpetas
 
 PreEntregaMMiranda/
 ├── index.html
-├── noticias.html
-├── calendario.html
-├── contacto.html
+├── html/
+│   ├── noticias.html
+│   ├── calendario.html
+│   └── contacto.html
 ├── estilos/
 │   ├── style.scss
 │   ├── style.css
 │   ├── _variables.scss
+│   ├── _mixins.scss
 │   ├── _base.scss
-│   ├── _components.scss
+│   ├── _layout.scss
+│   └── _components.scss
 ├── assets/
 │   ├── gavi.jpg
 │   ├── fichaje.jpg
 │   ├── lookman.jpg
 │   └── celebracion.jpg
 ├── .gitignore
-├── README.md
+└── README.md
+
 
 --////////////////////////////////////////////////////--
 
