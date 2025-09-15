@@ -58,7 +58,8 @@ PreEntregaMMiranda/
 ├── html/
 │   ├── noticias.html
 │   ├── calendario.html
-│   └── contacto.html
+│   ├── contacto.html
+│   └── resultado.html
 ├── estilos/
 │   ├── style.scss
 │   ├── style.css
