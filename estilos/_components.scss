@@ -1,0 +1,175 @@
+body {
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $fuente-principal;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: $espaciado;
+  text-align: center;
+}
+
+.seccion {
+  background-color: $color-secundario;
+  padding: $espaciado;
+  border-radius: $radio;
+  @include sombra-suave;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.6em;
+    border-bottom: 2px solid $color-secundario;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.categoria-item {
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: $radio;
+  margin-bottom: 0.4rem;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-acento;
+    color: #000;
+    transform: scale(1.05);
+  }
+}
+
+button {
+  background-color: $color-boton;
+  color: $color-texto;
+  border: none;
+  padding: 0.75rem;
+  border-radius: $radio;
+  cursor: pointer;
+}
+
+// Contacto
+.contenido {
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    @include responsive-form; // tu mixin
+    background-color: #2a2a2a;
+    color: $color-texto;
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: $color-texto;
+
+      &::placeholder {
+        color: lighten(#444, 35%);
+      }
+    }
+
+    textarea {
+      resize: none;
+      min-height: 140px;
+    }
+
+    button {
+      background-color: $color-boton;
+      color: $color-texto;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease, transform 0.15s ease;
+
+      &:hover {
+        background-color: darken($color-boton, 10%);
+        transform: translateY(-1px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.partidos {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    background-color: $color-secundario;
+    border: 2px solid $color-secundario;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: $color-texto;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($color-secundario, 10%);
+    }
+  }
+}
+
+
+.novedades {
+  background-color: darken($color-fondo, 5%);
+  padding: 2rem;
+  border-radius: $radio;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid $color-secundario;
+    padding-bottom: 0.5rem;
+    color: $color-texto;
+  }
+
+  article {
+    background-color: $color-secundario;
+    padding: 1rem;
+    border-radius: $radio;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+
+    h3 {
+      font-size: 1.4em;
+      margin-bottom: 0.5rem;
+      color: $color-acento;
+    }
+
+    p {
+      font-size: 1em;
+      color: $color-texto;
+    }
+
+    &:hover {
+      background-color: lighten($color-secundario, 5%);
+    }
+  }
+}

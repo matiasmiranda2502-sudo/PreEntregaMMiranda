@@ -1,0 +1,26 @@
+body {
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $fuente-principal;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-texto;
+  font-weight: bold;
+}
+
+p {
+  color: $color-texto;
+  line-height: 1.6;
+}
+
+a {
+  color: $color-acento;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
