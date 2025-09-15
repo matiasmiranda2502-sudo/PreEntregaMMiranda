@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noticias</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <!-- Tu estilo personalizado -->
+  <title>Resultado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../estilos/style.css" />
 </head>
 
 <body class="bg-dark text-white">
-
   <!-- Encabezado -->
   <header class="bg-dark text-white py-3">
     <div class="container">
       <h1 class="mb-3 text-center">La Redonda</h1>
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link text-white fw-bold" href="../index.html">Inicio</a></li>
@@ -45,7 +35,7 @@
   <!-- Layout principal -->
   <div class="container-fluid mt-4">
     <div class="row gx-4">
-
+      
       <!-- Barra lateral -->
       <aside class="col-md-2 destacados bg-dark text-white p-4 rounded">
         <h2 class="text-center border-bottom pb-2 mb-4">Destacados</h2>
@@ -80,51 +70,11 @@
       <!-- Contenido principal -->
       <main class="col-md-10">
         <section class="seccion mb-5">
-          <h2 class="text-center border-bottom pb-2 mb-4">Últimas novedades</h2>
-
-          <!-- Artículo 1 -->
-          <article class="novedades">
-            <h3>Gavi desafía a Pedri y De Jong</h3>
-            <div class="row align-items-center g-3">
-              <div class="col-md-6">
-                <img src="../assets/gavi.jpg" alt="Gavi en acción" class="img-fluid rounded">
-              </div>
-              <div class="col-md-6">
-                <p class="fs-5">
-                  Uno de los jugadores que mejor ha rendido en el Barcelona en esta gira de pretemporada ha sido Gavi...
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artículo 2 -->
-          <article class="novedades">
-            <h3>Arsenal confirma el fichaje de Viktor Gyökeres</h3>
-            <div class="row align-items-center g-3">
-              <div class="col-md-6">
-                <img src="../assets/fichaje.jpg" alt="Gyökeres en su presentación" class="img-fluid rounded">
-              </div>
-              <div class="col-md-6">
-                <p class="fs-5">
-                  Después de semanas de especulaciones... el Arsenal finalmente ha confirmado la incorporación de Viktor Gyökeres...
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artículo 3 -->
-          <article class="novedades">
-            <h3>'Guerra total' entre Lookman y Atalanta... con el Inter a la espera</h3>
-            <div class="row align-items-center g-3">
-              <div class="col-md-6">
-                <img src="../assets/lookman.jpg" alt="Lookman-Atalanta" class="img-fluid rounded">
-              </div>
-              <div class="col-md-6">
-                <p class="fs-5">
-                  El trío Inter-Ademola Lookman-Atalanta ha saltado por los aires... el nigeriano no se presentó al entrenamiento...
-                </p>
-              </div>
-            </div>
+          <h2 class="text-center border-bottom pb-2 mb-4">Resultado destacado</h2>
+          <article class="text-center">
+            <h3>Boca Juniors 2 - 1 River Plate</h3>
+            <p class="fs-5">En un clásico vibrante, Boca se impuso con goles de Cavani y Medina. River descontó con Borja en el segundo tiempo.</p>
+            <img src="../assets/celebracion2.jpg" alt="Celebración de Boca" class="img-fluid rounded mt-3" />
           </article>
         </section>
       </main>
@@ -136,9 +86,6 @@
     <p class="mb-0">&copy; 2025 PreEntrega Miranda</p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
