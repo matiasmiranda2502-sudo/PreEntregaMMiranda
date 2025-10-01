@@ -2,12 +2,22 @@
 <html lang="es"> <!-- Define el tipo de documento y el idioma principal del sitio (español) -->
 
 <head>
-  <meta charset="UTF-8" /> <!-- Especifica la codificación de caracteres para que se muestren correctamente acentos y símbolos -->
-  <title>PreEntrega2 Miranda</title> <!-- Título que aparece en la pestaña del navegador -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Redonda - Noticias, resultados y calendario del fútbol argentino e internacional.">
+  <meta name="keywords" content="fútbol, Boca Juniors, River Plate, calendario, resultados, noticias, deportes, Argentina">
+  <meta name="author" content="Matías Miranda">
+  <meta name="robots" content="index, follow">
+  <title>La Redonda - Inicio</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="estilos/style.css" /> <!-- Vincula el archivo CSS externo con los estilos de la página -->
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="estilos/style.css" />
 </head>
+
 
 <body class="bg-dark text-white">
   <!-- Encabezado con título principal y menú de navegación -->
@@ -80,7 +90,7 @@
       <main class="col-md-9 contenido-principal">
 
         <!-- Sección de bienvenida con imagen y texto -->
-        <section class="seccion">
+        <section class="seccion fade-in-up">
           <h2>Bienvenidos</h2>
           <div style="display: flex; align-items: center; gap: 20px;">
             <img src="assets/celebracion.jpg" alt="Jugadores celebrando un gol" style="width:50%; border-radius:10px;">
@@ -97,7 +107,7 @@
         </a>
 
         <!-- Sección con una noticia destacada -->
-        <section class="seccion">
+        <section class="seccion fade-in-up">
           <h2>Gavi desafía a Pedri y De Jong</h2>
           <div style="display: flex; align-items: center; gap: 20px;">
             <img src="assets/gavi.jpg" alt="Jugadores internacionales en acción" style="width:50%; border-radius:10px;">
@@ -113,7 +123,7 @@
         </a>
         
         <!-- Lista de partidos destacados -->
-        <ul class="partidos">
+        <ul class="partidos fade-in-up">
           <li>Equipo 1 vs Equipo 2 - Fecha</li>
           <li>Equipo A vs Equipo B - Fecha</li>
           <li>Equipo X vs Equipo Y - Fecha</li>
